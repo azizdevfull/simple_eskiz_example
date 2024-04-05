@@ -9,4 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::get('/sendSms', [SendSmsController::class, 'sendSms']);
+Route::post('/sendSms', [SendSmsController::class, 'sendSms']);
